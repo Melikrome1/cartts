@@ -1,3 +1,6 @@
+import { v4 as uuidv4 } from "uuid";
+let uuid= uuidv4()
+
 interface Item {
     id: string;
     name: string;
@@ -8,13 +11,13 @@ interface Item {
 interface User {
     id: string;
     name: string;
-    age: BigInteger;
+    age: number;
     cart: array [];
 }
 
-function createUser(name: string, age: BigInteger): User {
+function createUser(name: string, age: number): User {
     const user: User = {
-        id: uuid(),
+        id: uuidv4(),
         name,
         age,
         cart: [],
@@ -25,7 +28,7 @@ function createUser(name: string, age: BigInteger): User {
 
 function createItem(name: string, price: BigInteger, description: string); Item {
     const item: Item = {
-        id: uuid(),
+        id: uuidv4(),
         name,
         price,
         description,
