@@ -1,0 +1,19 @@
+{
+  "name": "cartjs",
+  "version": "1.0.0",
+  "description": "cart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CynCity",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@types/uuid": "^9.0.2",
+    "uuid": "^9.0.0"
+  }
+}
